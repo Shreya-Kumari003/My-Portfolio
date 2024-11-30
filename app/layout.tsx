@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Sound from "@/components/Sound";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Sound/>
+          <div id="my-modal" />
         </ThemeProvider>
       </body>
     </html>

@@ -19,7 +19,7 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              title="shreya"
+              title={item.title.split(" - ")[0].replace(/\s+/g, "")}
               href="https://github.com/Shreya-Kumari003"
             >
               <div className="relative flex items-center 
@@ -68,8 +68,11 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-red-600">
+                   <a
+                   href={item.link} target="_blank">
                     Check Live Site
+                   </a>
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

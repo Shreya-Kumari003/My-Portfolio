@@ -17,6 +17,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { Hobbies, Tools } from "../Hobbies";
 
 export const BentoGrid = ({
   className,
@@ -28,7 +29,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-8 gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -56,8 +57,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Availability", "Quality", "Reliability"];
+  const rightLists = ["User Friendly", "Efficient", "Scalable"];
 
   const [copied, setCopied] = useState(false);
 
@@ -116,11 +117,11 @@ export const BentoGridItem = ({
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
         )}
-
-        <div
+        {/* <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col ",
+            id !== 7 && "px-5 p-5 lg:p-10"
           )}
         >
           <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
@@ -128,6 +129,31 @@ export const BentoGridItem = ({
           </div>
           <div
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+          >
+            {title}
+          </div> */}
+        <div
+          className={cn(
+            titleClassName,
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col ",
+            id !== 7 && "px-5 p-5 lg:p-10"
+          )}
+        >
+          <div
+            className={cn(
+              "font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10",
+              id === 8 && "absolute !!top-[30px] !!right-[10px]"
+            )}
+          >
+            {description}
+          </div>
+          <div
+            className={cn(
+              "font-sans text-lg lg:text-3xl font-bold z-10",
+              !(id === 7 || id === 8 || id === 1) && "max-w-96",
+              (id===1) && "text-white-100"
+              
+            )}
           >
             {title}
           </div>
@@ -197,6 +223,25 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
+            </div>
+          )}
+          {/* {id === 7 && (
+            <div className="relative">
+              <Tools />
+            </div>
+          )} */}
+          {id === 7 && (
+            <div className="relative">
+              {/* <div className="absolute top-0 left-0 flex items-center justify-center text-white text-lg font-bold">
+                Your Text Here
+              </div> */}
+              <Tools />
+            </div>
+          )}
+
+          {id === 8 && (
+            <div className="mt-5 relative">
+              <Hobbies />
             </div>
           )}
         </div>
