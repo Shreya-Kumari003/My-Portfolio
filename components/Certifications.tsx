@@ -71,7 +71,7 @@ export const Certifications = () => {
           className="text-center md:text-lg lg:text-xl text-white/60 mt-4
         max-w-md mx-auto"
         >
-          A glimpse into my certifications and the skills I've gained!
+          A glimpse into my certifications and the skills I have gained!
         </p>
         <div className="flex flex-col md:mt-20 mt-10 gap-20">
           {certificates.map((certificate, certificateIndex) => (
