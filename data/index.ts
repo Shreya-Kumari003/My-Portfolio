@@ -3,6 +3,7 @@ export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Testimonials", link: "#testimonials" },
+    // { name: "Achievement", link: "#achievement" },
     { name: "Contact", link: "#contact" },
   ];
 
@@ -20,6 +21,10 @@ export const navItems = [
       iconType: "/css.svg",
     },
     {
+      title: "Javascript",
+      iconType: "/js.svg",
+    },
+    {
       title: "Tailwind",
       iconType: "/tailwind.svg",
     },
@@ -30,6 +35,22 @@ export const navItems = [
     {
       title: "Github",
       iconType: "/github.svg",
+    },
+    {
+      title: "FramerMotion",
+      iconType: "/fm.svg",
+    },
+    {
+      title: "Nodejs",
+      iconType: "/node.svg",
+    },
+    {
+      title: "Python",
+      iconType: "/py.svg",
+    },
+    {
+      title: "Bootstrap",
+      iconType: "/boot.svg",
     },
   ];
   
@@ -56,12 +77,12 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "What I Aim at",
+      title: "My Goals",
       description: "I constantly try to improve",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
-      img: "",
+      img: "/grid.svg",
       spareImg: "",
     },
     {
@@ -71,7 +92,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
+      img: "/grid.svg",
       spareImg: "",
     },
     {
@@ -81,7 +102,7 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-center md:max-w-full text-center",
-      img: "",
+      img: "/grid.svg",
       spareImg: "",
     },
     {
@@ -98,7 +119,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "Designing a tool for creating custom 3D models.",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -138,9 +159,9 @@ export const navItems = [
     {
       id: 3,
       title: "LinkUp - Connect, Share and Inspire - All in One Place",
-      des: " A dynamic social media platform with real-time chat, where you can build meaningful connections, share your moments, and engage with a vibrant community. Stay connected, express yourself, and be inspired by others, all in real time!",
+      des: "A dynamic social media platform with real-time chat, where you can build meaningful connections, share your moments, and engage with a vibrant community. Stay connected, express yourself, and be inspired by others, all in real time!",
       img: "/p4.png",
-      iconLists: ["/re.svg", "/tail.svg", "/chakra.png", "/framer.svg", "/mongo.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "/chakra.png", "/fm.svg", "/mongo.svg"],
       link: "https://linkup-social-app.onrender.com",
     },
     {
@@ -156,95 +177,97 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Collaborating with Shreya was a rewarding experience. Her dedication to enhancing the quality of our services and maps through meticulous research of targeted websites was exceptional. Her commitment to precision and her problem-solving skills made a significant impact on our project. If you need someone who combines technical skill with a passion for excellence, Shreya is the ideal partner.",
+      name: "Saachi Sehgal",
+      title: "Sr. Data Acquisition & Community Growth Analyst, HERE Technologies",
+      img:"/e1.png"
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Shreya during her internship at Celebal Technologies was truly rewarding. Throughout the program from she displayed exceptional dedication, enthusiasm, and a strong work ethic in the Data Science domain. Her problem-solving abilities and attention to detail were impressive. I have no doubt she will excel in her future pursuits.",
+      name: "Sharthak Acharjee",
+      title: "Senior Manager - HR, Celbel Technologies",
+      img:"/e3.png",
     },
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      quote: "I highly recommend Shreya for her exceptional performance during her time here. Throughout the program, she demonstrated remarkable hard work and dedication. Shreya actively participated in discussions and made valuable contributions. She applied her knowledge effectively to complete tasks and projects, showcasing excellent focus, organization, and time-management skills.",
+      name: "Latesh Bansal",
+      title: "Co-Founder, INTERNPE",
+      img:"/e4.png"
     },
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      quote: "I had the pleasure of working with Shreya Kumari during her Web Development internship at TechnoHacks EduTech. Throughout the internship, Shreya proved to be a consistent and hardworking individual. She demonstrated great dedication and a strong work ethic, making valuable contributions to the projects. Her commitment to learning and growth during this period was commendable.",
+      name: "Sandip Gavit",
+      title: "Founder, TechnoHacks",
+      img:"/e5.png"
     },
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
+      quote: "I am pleased to recommend Shreya, who successfully completed the LetsGrowMore Virtual Internship Program as a Tech Intern. During her internship, Shreya demonstrated excellent analytical skills and quickly adapted to new technologies, proving to be highly productive. She consistently showed a willingness to assist others and collaborated effectively with her team members.",
+      name: "Aman Kesarwani",
+      title: "Founder, LetsGrowMore",
+      img:"/e2.png"
+    }    
   ];
   
   export const companies = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      name: "TechnoHacks",
+      img: "/techno.svg",
+      nameImg: "/technoName.svg",
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
+      name: "here",
+      img: "/here.svg",
+      nameImg: "/hereName.svg",
     },
     {
       id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
+      name: "Lets Grow More",
+      img: "/grow.png",
+      nameImg: "/growName.svg",
     },
     {
       id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
+      name: "Celbel",
+      img: "/celbel.svg",
+      nameImg: "/celbelName.svg",
     },
     {
       id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
+      name: "InternPe",
+      img: "/intern.png",
+      nameImg: "/internName.svg",
     },
   ];
   
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Full Stack Developer",
+      desc: "Assisted in the development of a web-based platform using React.js and django enhancing interactivity.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "SharePoint and Web-Dev Intern",
+      desc: "Spearheaded the development of SharePoint forms, streamlining data collection processes and enhancing user experience within the organization.",
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Artificial Intelligence intern",
+      desc: "Demonstrated proficiency in natural language processing, enhancing written content accuracy by automatically correcting spelling and grammatical errors.",
+      className: "md:col-span-2",
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Data Engineering Intern",
+      desc: "Played a crucial role in optimizing data processing by designing and implementing data pipelines.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
@@ -254,14 +277,17 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link:"https://github.com/Shreya-Kumari003"
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/sch.svg",
+      link:"https://ieeexplore.ieee.org/author/37086921364"
     },
     {
       id: 3,
       img: "/link.svg",
+      link:"https://www.linkedin.com/in/shreya-kumari-b650b921a/"
     },
   ];
   

@@ -83,3 +83,34 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradient 5s ease-in-out infinite;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),    /* White */
+    rgba(180, 220, 255, 1),    /* Ice Blue */
+    rgba(180, 180, 180, 1)     /* Silver Grey */
+  );
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)); /* Glow effect */
+}
+
+
+@layer utilities {
+  .container {
+    @apply lg:max-w-[80vw]
+  }
+}

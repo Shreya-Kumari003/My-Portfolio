@@ -2,7 +2,7 @@ export const personalData = {
     name:"shreya",
     profile: '/profile.png',
     designation:"Based on Melbourne",
-    description:'In this video, you will learn to Build Next js 14 Personal Portfolio Website Using Tailwind CSS, React Awesome Reveal. Just follow the steps and run examples!Next JS: Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations. Under the hood, Next.js also abstracts and automatically configures tooling needed ',
+    description:"Hi there!👋 I'm Shreya Kumari, a passionate tech enthusiast with a knack for turning ideas into dynamic digital experiences. Whether it's building sleek websites with HTML, CSS, and JavaScript or diving deep into advanced data structures, I'm always up for a challenge. When I'm not coding, you’ll find me cooking while listening to some tunes🎧. With a love for problem-solving and a creative twist, I aim to make the digital world a little more fun and a lot more efficient. Let's create something awesome together! 🩷",
     address:"address",
     github:'https://github.com/Shreya-Kumari003',
     facebook: "shreyarajput600@gmail.com",
